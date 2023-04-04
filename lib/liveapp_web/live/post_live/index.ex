@@ -11,13 +11,6 @@ defmodule LiveappWeb.PostLive.Index do
     {:ok, stream(socket, :posts, Timeline.list_posts())}
   end
 
-  # @impl true
-  # def render(assigns) do
-  #    ~H"""
-  #    <h1 class="title">Bypassing the regular render function</h1>
-  #    """
-  # end
-
   @impl true
   def handle_params(params, _url, socket) do
     IO.inspect(params, pretty: true, label: "Params in handle params")

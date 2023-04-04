@@ -4,8 +4,6 @@ defmodule LiveappWeb.Simple do
 
   @impl true
   def mount(_params, _session, socket) do
-    # IO.inspect(socket, limit: :infinity, structs: false)
-    IO.inspect(socket, pretty: true, label: "Socket in MOUNT")
     {:ok, socket}
   end
 
@@ -17,8 +15,7 @@ defmodule LiveappWeb.Simple do
   end
 
   @impl true
-  def handle_params(params, _url, socket) do
-    IO.inspect(params, pretty: true, label: "Params in handle params")
+  def handle_params(_params, _url, socket) do
     {:noreply, socket}
   end
 
