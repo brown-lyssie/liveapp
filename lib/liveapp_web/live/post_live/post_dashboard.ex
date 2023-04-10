@@ -1,4 +1,4 @@
-defmodule LiveappWeb.PostLive.Index do
+defmodule LiveappWeb.PostLive.Post_Dashboard do
   use LiveappWeb, :live_view
 
   alias Liveapp.Timeline
