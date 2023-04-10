@@ -23,7 +23,7 @@ defmodule LiveappWeb.Router do
     live "/posts/:id", PostLive.Show, :show
     live "/posts/:id/show/edit", PostLive.Show, :edit
     live "/simple", Simple
-    live "/", PostLive.Post_Dashboard
+    live "/", PostLive.PostDashboard
     #get "/", PageController, :home
 
   end
