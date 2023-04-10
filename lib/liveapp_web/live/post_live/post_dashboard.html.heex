@@ -1,0 +1,12 @@
+<.header>
+  My Dashboard
+  <p> Total number of posts: <%= @numposts %></p>
+  <:actions>
+    <.link navigate={~p"/posts/new"}>
+      <.button>Create a New Post</.button>
+    </.link>
+	<.link navigate={~p"/posts"}>
+      <.button>List All Posts</.button>
+    </.link>
+  </:actions>
+</.header>
