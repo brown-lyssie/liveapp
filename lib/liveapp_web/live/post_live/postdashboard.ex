@@ -14,6 +14,6 @@ defmodule LiveappWeb.PostLive.PostDashboard do
   @impl true
   def handle_params(params, _url, socket) do
     IO.inspect(params, pretty: true, label: "Params in handle params")
-    {:noreply, assign(socket, :posts, length(Timeline.list_posts()))}
+    {:noreply, assign(socket, :numPosts, length(Timeline.list_posts()))}
   end
 end
